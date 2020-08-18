@@ -3,6 +3,12 @@
   "plugins": [
     "lodash",
     [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
       "import",
       {
         "libraryName": "antd",
