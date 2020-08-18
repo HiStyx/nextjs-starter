@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "NODE_ENV=production ANALYZE=true next build"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
   },
   "homepage": "https://github.com/HiStyx/nextjs-starter#readme",
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.5.2",
     "babel-plugin-import": "^1.13.0",
+    "babel-plugin-lodash": "^3.3.4",
     "eslint": "^7.7.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
@@ -32,6 +35,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "antd": "^4.5.4",
+    "lodash": "^4.17.20",
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
